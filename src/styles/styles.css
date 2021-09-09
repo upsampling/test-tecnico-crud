@@ -1,0 +1,40 @@
+:root{
+    --primary-fondo: ##38EBCA;
+    --primary-color1: #E550EB;
+    --primary-color2: #EBCD67;
+}
+
+html, body {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    padding: 5px;
+}
+
+p {
+    cursor: pointer;
+}
+
+.marco {
+    display: grid;    
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "h h h h h m"
+      /* "h h h h h m" */
+}
+.marco > .btn {
+    margin: 1px;
+}
+.marco > .description {
+    grid-area: h;
+    
+}
+
+.list-group-item {
+    margin: 2px;
+}
+
+
+.complete {
+    text-decoration: line-through;
+}
